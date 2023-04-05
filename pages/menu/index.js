@@ -65,7 +65,7 @@ function MenuPage() {
   return (
     <div className={classes.page}>
       <Image src={image} alt="" className={classes.image} />
-      {renderItem}
+      <div className={classes.menuItems}>{renderItem}</div>
     </div>
   );
 }

@@ -1,29 +1,17 @@
 import classes from "../../styles/ContentItem.module.css";
 import PulsingImage from "../PulsingImage";
 function ContactItem(props) {
-  const contentRender = props.imageLeft ? (
-    <div className={classes.imageLeft}>
-      <div className={classes.imageContainerLeft}>
+  return (
+    <div className={classes.container}>
+      <div className={classes.imageContainer}>
         <PulsingImage image={props.image} />
       </div>
-      <div className={classes.contentContainerLeft}>
+      <div className={classes.contentContainer}>
         <h1>{props.title}</h1>
         <p>{props.details}</p>
-      </div>
-    </div>
-  ) : (
-    <div className={classes.imageRight}>
-      <div className={classes.contentContainerRight}>
-        <h1>{props.title}</h1>
-        <p>{props.details}</p>
-      </div>
-      <div className={classes.imageContainerRight}>
-        <PulsingImage image={props.image} />
       </div>
     </div>
   );
-
-  return contentRender;
 }
 
 export default ContactItem;
