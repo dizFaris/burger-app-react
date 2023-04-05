@@ -6,23 +6,9 @@ import burger from "../../images/burger.jpg";
 import stamp from "../../images/beefStamp.png";
 import Image from "next/image";
 import ContactItem from "../../components/UI/ContentItem";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function AboutPage() {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [windowSize]);
-
   return (
     <div className={classes.background}>
       <div>
@@ -39,7 +25,7 @@ function AboutPage() {
         image={ourStory}
       />
       <ContactItem
-        imageLeft={windowSize > 899 ? false : true}
+        imageLeft={false}
         title="The journey"
         details={`Our journey started in a small food truck, where we quickly gained a reputation for our juicy burgers and friendly service. As word spread, we knew it was time to expand, and we opened our first brick-and-mortar store in the heart of the city.`}
         image={foodtruck}
