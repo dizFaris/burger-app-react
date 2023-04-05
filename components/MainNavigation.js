@@ -9,7 +9,7 @@ import OrderContext from "./store/order-context";
 
 function MainNavigation(props) {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
-  const [isOpen, setisOpen] = useState(true);
+  const [isOpen, setisOpen] = useState(false);
   const router = useRouter();
   const orderCtx = useContext(OrderContext);
   const { items } = orderCtx;
