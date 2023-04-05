@@ -1,0 +1,70 @@
+.image {
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  height: 800px;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.typewriter {
+  width: 100%;
+  color: white;
+  font-family: cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.headingParagraph {
+  width: 100%;
+  color: white;
+  font-family: cursive;
+  font-size: 35px;
+}
+
+.logo {
+  margin: auto;
+  height: 300px;
+  width: 400px;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
+
+.errorText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(26, 1, 1);
+}
+
+.spinner {
+  height: 80px;
+  width: 80px;
+  border: 6px solid black;
+  margin: auto;
+  border-color: rgb(255, 0, 0) transparent rgb(255, 0, 0) transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .image {
+    height: 800px;
+  }
+}

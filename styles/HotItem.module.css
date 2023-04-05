@@ -1,0 +1,141 @@
+.item {
+  width: 70%;
+  height: 300px;
+  margin: 2% 0 1% 15%;
+  display: flex;
+  background-color: rgb(155, 155, 155);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.itemImage {
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+  position: relative;
+  top: -154.5px;
+  z-index: 0;
+}
+
+.logo {
+  height: 80px;
+  width: 90px;
+}
+
+.hotLogo {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h4 {
+  font-size: 35px;
+  color: yellow;
+  padding: 20px 0 0 20px;
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.description p {
+  font-size: 22px;
+  padding: 0 2% 2% 2%;
+  margin: -10px 0 0 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  padding-right: 50px;
+  margin-bottom: 2%;
+}
+
+.footer p {
+  padding-right: 30px;
+  margin: 0;
+  font-size: 30px;
+  color: yellow;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border-style: none;
+  background-color: red;
+  border: 3px solid yellow;
+  color: white;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  padding: 1%;
+}
+
+.button:hover {
+  background-color: rgb(146, 122, 122);
+  color: yellow;
+}
+
+@media screen and (max-width: 1500px) {
+  .item {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .item {
+    height: 430px;
+  }
+
+  .button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .item {
+    width: 90%;
+    margin: 5% 0 3% 5%;
+    display: grid;
+    height: 100%;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .button {
+    width: 300px;
+  }
+
+  .footer p {
+    padding-right: 100px;
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    color: yellow;
+  }
+}

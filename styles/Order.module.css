@@ -1,0 +1,131 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.order {
+  position: fixed;
+  top: 20vh;
+  left: 15%;
+  width: 70%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.orderItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-bottom: 5px solid black;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.actions {
+  text-align: right;
+}
+
+.order p {
+  font-size: 20px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.linkButton {
+  width: 140px;
+  height: 35px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border-style: none;
+  background-color: red;
+  border: 3px solid yellow;
+  color: white;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.linkButton:hover {
+  background-color: rgb(146, 122, 122);
+  color: yellow;
+}
+
+.button {
+  width: 125px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border-style: none;
+  background-color: red;
+  border: 3px solid yellow;
+  color: white;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(146, 122, 122);
+  color: yellow;
+}
+
+.spinner {
+  height: 80px;
+  width: 80px;
+  border: 6px solid black;
+  margin: auto;
+  border-color: rgb(255, 0, 0) transparent rgb(255, 0, 0) transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

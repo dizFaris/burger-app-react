@@ -1,0 +1,86 @@
+.menuItem {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 270px;
+  background-color: rgb(123, 123, 123);
+  box-shadow: 4px 3px 5px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 3px 5px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 5px 6px rgba(0, 0, 0, 0.75);
+  font-family: cursive;
+  width: 500px;
+  display: flex;
+}
+
+.amount {
+  display: flex;
+  margin: 10px 0 3px 0;
+}
+
+.amount label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.amount input {
+  width: 50px;
+  font-size: 25px;
+}
+
+.button {
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border-style: none;
+  background-color: red;
+  border: 3px solid yellow;
+  color: white;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+  margin-top: 2px;
+}
+
+.button:hover {
+  background-color: rgb(146, 122, 122);
+  color: yellow;
+}
+
+.image {
+  width: 60%;
+  height: 100%;
+}
+
+.menuItem h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  color: yellow;
+}
+
+.menuItemParagraph {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.buttonOrder {
+  height: 40px;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.quantity {
+  margin-bottom: 5px;
+}
+
+.container {
+  padding: 1%;
+}
+
+.invalidAmount {
+  font-size: 15px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}

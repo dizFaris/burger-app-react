@@ -1,0 +1,107 @@
+.imageLeft {
+  display: flex;
+  width: 80%;
+  font-family: cursive;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.imageRight {
+  display: flex;
+  width: 80%;
+  font-family: cursive;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.imageContainerLeft {
+  width: 20rem;
+  height: 15rem;
+  margin-right: 10px;
+}
+
+.imageContainerRight {
+  width: 20rem;
+  height: 15rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: pulse 2s infinite;
+}
+
+.contentContainerLeft {
+  width: 100%;
+  height: 80%;
+}
+
+.contentContainerRight {
+  width: 100%;
+  height: 80%;
+}
+
+.contentContainerLeft h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.contentContainerRight h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.contentContainerLeft p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.contentContainerRight p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+@keyframes pulse {
+  0% {
+    border-width: 2px;
+  }
+  25% {
+    border-width: 8px;
+  }
+  50% {
+    border-width: 2px;
+  }
+  75% {
+    border-width: 8px;
+  }
+  100% {
+    border-width: 2px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .imageLeft {
+    display: inline-block;
+    height: 300px;
+    margin-left: 10%;
+  }
+
+  .contentContainerLeft {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .imageContainerLeft {
+    width: 280px;
+    margin: auto;
+  }
+
+  .contentContainerLeft p {
+    overflow: auto;
+  }
+}

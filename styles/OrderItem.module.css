@@ -1,0 +1,67 @@
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #8a2b06;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.orderItem h2 {
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+  width: 300px;
+}
+
+.summary {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 25px;
+}
+
+.amount {
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  color: #363636;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+  }
+}
+
+.orderItem button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  width: 3rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.25rem;
+}
+
+.orderItem button:hover,
+.orderItem button:active {
+  background-color: #ff0000;
+  color: white;
+}

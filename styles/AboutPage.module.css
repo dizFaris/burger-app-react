@@ -1,0 +1,49 @@
+.background {
+  background-color: white;
+  color: black;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  height: 600px;
+  opacity: 0.9;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.typewriter {
+  width: 700px;
+  text-align: center;
+  font-size: 35px;
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  text-align: center;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.topImage {
+  width: 700px;
+}
+
+@media screen and (max-width: 700px) {
+  .topImage {
+    width: 100%;
+  }
+}
