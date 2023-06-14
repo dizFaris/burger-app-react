@@ -34,7 +34,7 @@ function Order(props) {
     setIsSubmitting(true);
 
     await fetch(
-      "https://burgers-1e2e9-default-rtdb.firebaseio.com/orders.json",
+      "https://burger-app-89388-default-rtdb.firebaseio.com/orders.json",
       {
         method: "POST",
         body: JSON.stringify({

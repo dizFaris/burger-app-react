@@ -16,7 +16,7 @@ function ItemPage() {
   useEffect(() => {
     const fetchBurgers = async () => {
       const response = await fetch(
-        `https://burgers-1e2e9-default-rtdb.firebaseio.com/burgers/${id}.json`
+        `https://burger-app-89388-default-rtdb.firebaseio.com/burgers/${id}.json`
       );
 
       if (!response.ok) {
